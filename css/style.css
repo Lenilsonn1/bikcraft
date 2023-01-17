@@ -81,6 +81,10 @@ img{
     padding: 2rem;
     margin: 0 auto;
 }
+.introdução-info{
+    display: grid;
+
+}
 .introdução-info h1{
     font-size: 4rem;
     max-width: 14ch;
@@ -98,12 +102,14 @@ img{
     color: var(--c5);
 }
 .introdução-info a{
-    padding: 8px 16px;
+    padding: 12px 18px;
     border-radius: 4px;
     font-size: .85rem;
+    font-weight: bold;
     text-transform: uppercase;
     background: var(--p5);
     color: var(--p1);
+    justify-self: start;
 }
 .cover img{
     height: 100vh;
@@ -132,4 +138,108 @@ img{
     display: flex;
     gap: 20px;
     padding: 10px;
+    
+}
+
+@media (max-width: 970px){
+    .introdução{
+        align-items: flex-start;
+    }
+
+    .introdução-info{
+        transition: 1s;
+        
+    }
+    .introdução-info h1{
+        font-size: 3rem;
+    }
+
+
+
+}
+
+@media(max-width: 800px){
+    .header-container{
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu li a{
+        font-size: 1rem;
+        padding: 12px;
+        background-color: var(--c11);
+        border-radius: 6px;
+        
+    }
+    .menu li a:hover{
+        border-bottom: none;
+    }
+    .introdução{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .introdução-info h1{
+        font-size: 3rem;
+        max-width: 100%;
+    }
+    .introdução-info p{
+        max-width: 60ch;
+    }
+    .cover img{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+
+    }
+
+}
+@media (max-width: 550px ){
+
+    .header-container{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding: 1.25rem;
+    }
+    .header-container img{
+        justify-self: center;
+    }
+    .menu{
+        /* margin-left: -30%; */
+        justify-content: center;
+    }
+    .menu li a{
+        font-size: 1rem;
+        padding: 12px;
+        background-color: var(--c11);
+        border-radius: 6px;
+        
+    }
+    .menu li a:hover{
+        border-bottom: none;
+    }
+    .container{
+        background: var(--c11);
+    }
+    .introdução{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .introdução-info h1{
+        font-size: 2.2rem;
+        max-width: 100%;
+    }
+    .introdução-info p{
+        font-size: 1.2rem;
+        max-width: 50ch;
+    }
+    .cover img{
+        max-width: 100%;
+        object-fit: contain;
+        object-position: top;
+        border-radius: 8px;
+    }
 }
