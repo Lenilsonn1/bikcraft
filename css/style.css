@@ -1,0 +1,135 @@
+:root{
+    --w:#ffffff;
+    --c1:#f7f7f7;
+    --c2:#ededed;
+    --c3:#dedede;
+    --c4:#cccccc;
+    --c5:#b2b2b2;
+    --c6:#9c9c9c;
+    --c7:#717171;
+    --c8:#595959;
+    --c9:#404040;
+    --c10:#2e2e2e;
+    --c11:#111111;
+    --c12:#000000;
+
+    /* botão */
+    --p1:#332200;
+    --p2:#664400;
+    --p3:#a66f00;
+    --p4:#e4a30b;
+    --p5:#ddbb00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* header */
+
+.header{
+    background: var(--c12);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+.menu li a{
+    font-size: 1.2rem;
+    color: var(--c1);
+    text-transform: capitalize;
+}
+.menu li a:hover{
+    border-bottom: 1px solid var(--w);
+}
+
+/* introdução */
+
+.container{
+    background: var(--c12);
+    max-height: 90vh;
+    margin-bottom: 6rem;
+}
+.introdução{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.introdução-info h1{
+    font-size: 4rem;
+    max-width: 14ch;
+    margin-bottom: 1rem;
+    color: var(--w);
+}
+.introdução h1::after{
+    content: '.';
+    color: var(--p4);
+}
+.introdução-info p{
+    font-size: 1.5rem;
+    max-width: 40ch;
+    margin-bottom: 1rem;
+    color: var(--c5);
+}
+.introdução-info a{
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: .85rem;
+    text-transform: uppercase;
+    background: var(--p5);
+    color: var(--p1);
+}
+.cover img{
+    height: 100vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* galeria */
+.galeria{
+    align-items: center;
+    padding: 2rem;
+    margin:  0 auto;
+    height: 1000px;
+}
+.galeria h1{
+    font-size: 3rem;
+    max-width: 1200px;
+    padding: 2rem;
+    margin:  0 auto;
+}
+.galeria h1::after{
+    content: '.';
+    color: var(--p4);
+}
+.galeria-img{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
