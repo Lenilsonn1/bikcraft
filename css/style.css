@@ -1,3 +1,5 @@
+@import url(./tecnologia.css);
+@import url(./parceiros.css);
 :root{
     --w:#ffffff;
     --c1:#f7f7f7;
@@ -122,7 +124,8 @@ img{
     align-items: center;
     padding: 2rem;
     margin:  0 auto;
-    height: 1000px;
+    height: 100%;
+    
 }
 .galeria h1{
     font-size: 3rem;
@@ -137,9 +140,40 @@ img{
 .galeria-img{
     display: flex;
     gap: 20px;
-    padding: 10px;
+    padding: 0 20px 20px 20px;
+    margin: 0 auto;
+    overflow-x: auto;
     
 }
+.galeria-img li {
+    flex: 1;
+    min-width: 280px;
+    
+}
+.galeria-img li a{
+    display: block;
+    color: var(--c11);
+}
+.galeria-img h2{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+.galeria-img h2::before {
+    content: " ";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    background-color: var(--p1);
+    transition: width 0.2s;
+}
+.galeria-img h2:hover::before{
+    width: 20px;
+}
+
+
+
 
 @media (max-width: 970px){
     .introdução{
@@ -174,6 +208,9 @@ img{
     }
     .menu li a:hover{
         border-bottom: none;
+    }
+    .container{
+        margin-bottom: 2rem;
     }
     .introdução{
         display: grid;
@@ -223,6 +260,7 @@ img{
     }
     .container{
         background: var(--c11);
+        margin-bottom: 0;
     }
     .introdução{
         display: grid;
@@ -241,5 +279,15 @@ img{
         object-fit: contain;
         object-position: top;
         border-radius: 8px;
+    }
+
+    .galeria-img{
+        gap: 6px;
+        padding: 10px;
+        margin: 0;
+    }
+    .galeria-img img{
+        max-width: 80%;
+        
     }
 }
