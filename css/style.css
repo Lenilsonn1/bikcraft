@@ -1,5 +1,9 @@
 @import url(./tecnologia.css);
 @import url(./parceiros.css);
+@import url(./depoimento.css);
+@import url(./seguros.css);
+@import url(./contato.css);
+@import url(footer.css);
 :root{
     --w:#ffffff;
     --c1:#f7f7f7;

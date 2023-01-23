@@ -1,0 +1,47 @@
+.contatos-container{
+    background-color: var(--c12);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.contatos-container h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--c6);    
+    margin-bottom: 20px;
+}
+.contatos-container ul li a:hover{
+    color: var(--c1);
+}
+.contato ul{
+    display: flex;
+    flex-direction: column;
+    color: var(--c3);
+    gap: 10px;
+}
+.contato ul li{
+    font-size: 1.25rem;
+    position: relative;
+}
+.contato ul li a{
+    color: var(--c3);
+}
+.contato ul li:nth-child(even)::before{
+    content: '';
+    width: 15rem;
+    height: 5%;
+    background: var(--c10);
+    position: absolute;
+    top: 25px;
+}
+.informações ul{
+    display: grid;
+    gap: 10px;
+}
+.informações ul li{
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+.informações ul li a{
+    color: var(--c3);
+}

@@ -1,0 +1,17 @@
+footer {
+    padding: 30px;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 0;
+    background-color: var(--c12);
+
+}
+footer p{
+    font-size: 1.25rem;
+    color: var(--c6);
+    text-align: center;
+}
+footer p::before{
+    content: '@';
+    padding: 10px;
+}

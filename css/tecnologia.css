@@ -67,6 +67,14 @@
     color: var(--p5);
     position: relative;
 }
+.tecnologia-info a:hover{
+    color: var(--c2);
+    transition: 0.7s;
+}
+.tecnologia-info a:hover::before{
+    background: var(--c2);
+    transition: 0.7s;
+}
 .tecnologia-info a::before{
     content: ' ';
     width: 15.4rem;
@@ -142,6 +150,9 @@
     }
 }
 @media(max-width:600px){
+    .container-tecnologia{
+        margin-bottom: 1rem;
+    }
     .tecnologia-vantagens{
         flex-direction: column;
         gap: 20px;

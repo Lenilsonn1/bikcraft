@@ -1,0 +1,116 @@
+.seguros-container{
+    background: var(--c11);
+    height: 100%;
+    /* margin-bottom: 6rem; */
+}
+.seguros{
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.seguros h1{
+    grid-column: 1/-1;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--c1);
+}
+.seguros h1::after{
+    content: '.';
+    color: var(--p4);
+}
+.seguro-prata{
+    /* display: grid;
+    gap: 20px;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 0px 30px 30px;
+
+    background: var(--c12);
+    border-radius: 4px; */
+    background-color: var(--c12);
+    color: var(--c1);
+    padding: 32px 32px 32px 60px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-radius: 4px;
+    
+}
+.seguro-prata h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--c5);
+    font-weight: bold;
+}
+.seguro-prata .ouro{
+    color: var(--p4);
+}
+.valor{
+    font-size: 1.25rem;
+}
+.valor span{
+    font-size: .80rem;
+    color: var(--c5);
+    margin: 14px;
+}
+.seguro-prata ul{
+    grid-column: 1/-1;
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.seguro-prata ul li{
+    font-size: 1.25rem;
+    color: var(--c1);
+    position: relative;
+}
+.seguro-prata ul li::before{
+    content: '';
+    background: url(https://www.origamid.com/projetos/bikcraft/img/icones/lista.svg);
+    width: 13px;
+    height: 9px;
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    color: var(--p5);
+    font-weight: bold;
+
+}
+.seguro-prata a{
+    grid-column: 1;
+    padding: 8px 20px;
+    justify-self: start;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    background: var(--c8);
+    color: var(--c2);
+}
+.seguro-prata a:hover{
+    background-color: var(--c7);
+}
+.seguro-prata .btn-ouro{
+    background-color: var(--p4);
+    color: var(--c12);
+}
+.seguro-prata .btn-ouro:hover{
+    background-color: var(--p3) ;
+}
+
+@media(max-width:800px){
+    .seguros{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .seguro-prata ul{
+        margin: 16px 0;
+        gap: 15px;
+    }
+}
+@media(max-width:600px){
+    .seguro-prata a{
+        font-size: 1.15rem;
+    }
+}

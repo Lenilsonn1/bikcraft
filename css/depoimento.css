@@ -1,0 +1,83 @@
+.depoimento{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: var(--p4);
+}
+.depoimento-info{
+    margin: 0 auto;
+    height: 50vh;
+}
+.depoimento-info p{
+    font-size: 2rem;
+    max-width: 30ch;
+    position: relative;
+}
+.depoimento-info p::before{
+    content: ' “ ';
+    color: var(--p3);
+    display: block;
+    font-size: 5rem;
+    position: absolute;
+    top: -15px;
+    left: -45px;
+}
+.depoimento-info p::after{
+    content: ',,';
+    display: block;
+    font-size: 5rem;
+    color: var(--p3);
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+.depoimento-info span{
+    color: var(--p2);
+    display: block;
+    margin-top: 2rem;
+    font-weight: 800;
+    font-size: 1.25rem;
+    
+}
+.cover-depoimento{
+    display: block;
+    max-width: 100%;
+    
+}
+@media(max-width:975px){
+    .depoimento-info p{
+        max-width: 22ch;
+    }
+    .depoimento-info p::after{
+        color: var(--p3);
+        top: 140px;
+        left: 58%;
+    }
+}
+@media(max-width:800px){
+    .depoimento{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+    .depoimento-info {
+        justify-content: center;
+        align-items: center;
+        max-width: 50ch;
+    }
+    .depoimento-info p{
+        font-size: 1.5rem;
+       max-width: 100%;
+       
+    }
+    .depoimento-info p::after{
+        top: 30px;
+        left: 72%;
+    }
+    .cover-depoimento img{
+        width: 100%;
+        max-height: 40vh;
+    } 
+}
