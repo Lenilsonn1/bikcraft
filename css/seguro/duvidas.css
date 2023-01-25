@@ -1,0 +1,36 @@
+.perguntas{
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.duvidas li{
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.duvidas li:nth-child(odd){
+    background: var(--c1);
+    border-radius: 4px;
+}
+.duvidas li h1{
+    font-size: 1.5rem;
+}
+.duvidas li h1::before{
+    content: '';
+    width: 10px;
+    height: 8px;
+    background: var(--p4);
+    position: absolute;
+    top: 23%;
+    left: 5px;
+}
+.duvidas li p{
+    font-size: 1.2rem;
+    max-width: 60ch;
+    padding: 5px;
+}

@@ -3,6 +3,7 @@
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    
 }
 .contatos-container h1{
     font-size: 2rem;
@@ -44,4 +45,18 @@
 }
 .informações ul li a{
     color: var(--c3);
+}
+@media (max-width:900px){
+    .contatos-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media (max-width:650px) {
+    .contatos-container{
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
 }

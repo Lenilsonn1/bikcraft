@@ -1,0 +1,48 @@
+@import url(../bicicletas/header.css);
+@import url(../bicicletas/introdução.css);
+@import url(../index/seguros.css);
+@import url(./vantagens.css);
+@import url(duvidas.css);
+@import url(../index/contato.css);
+@import url(../index/footer.css);
+
+
+:root{
+    --w:#ffffff;
+    --c1:#f7f7f7;
+    --c2:#ededed;
+    --c3:#dedede;
+    --c4:#cccccc;
+    --c5:#b2b2b2;
+    --c6:#9c9c9c;
+    --c7:#717171;
+    --c8:#595959;
+    --c9:#404040;
+    --c10:#2e2e2e;
+    --c11:#111111;
+    --c12:#000000;
+
+    /* botão */
+    --p1:#332200;
+    --p2:#664400;
+    --p3:#a66f00;
+    --p4:#e4a30b;
+    --p5:#ddbb00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+

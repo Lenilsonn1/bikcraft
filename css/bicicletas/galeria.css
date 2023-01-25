@@ -1,0 +1,147 @@
+.galeria{
+    background-color: var(--w);
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.galeria-imagem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.cover{
+    position: relative;
+}
+.cover img{
+    border-radius: 4px;
+}
+.cover span{
+    background: var(--c11);
+    color: var(--w);
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.galeria-info{
+    display: grid;
+    gap: 1rem;
+    position: relative;
+}
+.galeria-info::before{
+    content: '';
+    width: 20px;
+    height: 8px;
+    background: var(--p4);
+    position: absolute;
+    top: -5px;
+}
+.galeria-info h1{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+.galeria-info h1::after{
+    content: '';
+    width: 50px;
+    height: 40px;
+    background: url(../../img/icon--detalhe.svg);
+    position: absolute;
+    right: 10px;
+}
+.galeria-info .info{
+    font-size: 1.3rem;
+}
+.galeria-info ul{
+    display: grid;
+    gap: 1rem;
+}
+.galeria-info ul li{
+    display: flex;
+    align-items: center;
+    gap: .80rem;
+}
+.galeria-info a{
+    background: var(--p4);
+    color: var(--p1);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 10px 30px 8px 10px;
+    text-align: start;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.galeria-info a::after{
+    content: ' ';
+    width: 20px;
+    height: 10px;
+    background: url(../../img/icon-seta.svg);
+    position: absolute;
+    bottom: 15px;
+    margin-left: 5px;
+}
+.galeria-info a:hover{
+    background: var(--p5);
+}
+
+
+.magic-bg{
+    background: linear-gradient(to right, var(--w) 30%, var(--c11) 0%);
+    margin: 2.5rem 0;
+    padding: 1rem 0;
+
+}
+.magic-bg h1{
+    color: var(--w);
+}
+.magic-bg p {
+    color: var(--c4);
+}
+
+
+@media(max-width:960px){
+    .galeria-info h1{
+        font-size: 2rem;
+    }
+    .galeria-info .info{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:900px){
+
+    .galeria-info{
+        gap: .50rem;
+    }
+    .galeria-info ul{
+        gap: 0.50rem;
+    }
+}
+@media(max-width:800px){
+    .galeria-imagem{
+        grid-template-columns: 1fr;
+    }
+    .cover img{
+        max-height: 80%;
+    }
+    .galeria-info{
+        gap: 20px;
+    }
+    .magic-bg{
+        background: var(--c11);
+        padding: 1rem;
+    }
+}
+@media(max-width:600px){
+    .galeria-info ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .galeria-info a{
+        position: initial; 
+        justify-self: start;
+        font-size: 1rem;
+    }
+}

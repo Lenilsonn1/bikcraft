@@ -1,0 +1,25 @@
+.header{
+    background: var(--c12);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+.menu li a{
+    font-size: 1.2rem;
+    color: var(--c1);
+    text-transform: capitalize;
+}
+.menu li a:hover{
+    border-bottom: 1px solid var(--w);
+}
