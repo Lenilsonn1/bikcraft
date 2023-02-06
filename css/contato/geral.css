@@ -1,0 +1,15 @@
+@import url(../bicicletas/geral.css);
+@import url(../bicicletas/header.css);
+@import url(../bicicletas/introdução.css);
+@import url(./formulario.css);
+@import url(./lojas.css);
+@import url(../index/contato.css);
+
+.container{
+    background: linear-gradient(var(--c11) 30%, var(--c1) 0%);
+    height: 100%;
+}
+
+.icons ion-icon {
+    color: var(--p5);
+}

@@ -1,0 +1,80 @@
+.lojas{
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+
+}
+.lojas h1{
+    font-size: 3rem;
+    padding: 3rem 0;
+}
+.lojas-locais{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+.lojas-locais h2{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    
+}
+.lojas-locais .ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ul{
+    padding: 0 2rem;
+}
+.ul ul{
+    padding: 10px;
+    color: var(--c8);
+    position: relative;
+}
+.ul ul::before {
+    content: '';
+    width: 1px;
+    height: 65px;
+    background: var(--c2);
+    position: absolute;
+    left: -5px;
+}
+.ul ul li{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.loja-rio, .loja-sp{
+    background: var(--w);
+}
+.lojas-locais span{
+    font-size: 1.2rem;
+    color: var(--c12);
+    /* padding: 2rem; */
+    margin-left: 2rem;
+    position: relative;
+    left: 20px;
+    
+
+}
+.lojas-locais span::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../../img/horario.svg) no-repeat;
+    position: absolute;
+    left: -25px;
+}
+
+@media(max-width:800px){
+    .lojas-locais .ul{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:600px){
+    .lojas-locais{
+        grid-template-columns: 1fr;
+    }
+}

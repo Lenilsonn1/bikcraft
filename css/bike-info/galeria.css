@@ -1,0 +1,34 @@
+.galeria-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.galeria-container h1{
+    font-size: 4rem;
+}
+.galeria-container h1::after{
+    content: '.';
+    color: var(--p5);
+    font-size: 4rem;
+}
+.gallery{
+    display: flex;
+    gap: 20px;
+    width: 1200px;
+}
+.gallery a img{
+    width: 100vw;
+    height: 70%;
+}
+.gallery-img{
+    height: 100vh;
+}
+.gallery-img a h2{
+    font-size: 1.8rem;
+    color: var(--c12);
+    position: relative;
+}
+.gallery-img span{
+    font-size: 1.3rem;
+    color: var(--c9);
+}

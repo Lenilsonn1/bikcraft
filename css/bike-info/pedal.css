@@ -1,0 +1,47 @@
+.pedal-container{
+    background: linear-gradient(var(--w) 25%, var(--c11) 0 85%, var(--c12) 20%);
+}
+.pedal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.cover img{
+    max-width: 100%;
+}
+
+.info-pedal h1{
+    color: var(--c1);
+    font-size: 3.5rem;
+    max-width: 15ch;
+    margin-bottom: 15px;
+    margin-top: 1rem;
+}
+.info-pedal span{
+    color: var(--p4);
+}
+.info-pedal p{
+    font-size: 1.5rem;
+    color: var(--c4);
+    margin-bottom: 15px;
+}
+.info-pedal a{
+    font-size: 1.5rem;
+    background:var(--p4);
+    color: var(--c12);
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+@media (max-width:1100px){
+    .info-pedal h1{
+        margin-top: 2.5rem;
+        font-size: 2.5rem;
+        max-width: 30ch;
+    }
+}
